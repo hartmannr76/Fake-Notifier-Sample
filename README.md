@@ -8,14 +8,14 @@ I say similarly because this proposal leaves all business logic intact, and swap
 To add an additional layer of safety, what is included in the published artifacts (in the case of non-fake) does not allow the application to "boot up" as a fake. It simply fails. The "fake" artifacts allow you to spin it up either way.
 
 ### Running as a fake
-1) `dotnet resotre`
+1) `dotnet restore`
 2) `cd ./scr/API`
 3) `dotnet build /p:Configuration=Fake`
 4) `ASPNETCORE_ENVIRONMENT=Development dotnet run -c=Fake --no-build`
 
 ### Running as a real service
 ** To verify fake assets aren't published, you can blow out your `build` directory in the root **
-1) `dotnet resotre`
+1) `dotnet restore`
 2) `cd ./scr/API`
 3) `dotnet build`
 4) `ASPNETCORE_ENVIRONMENT=Development dotnet run --no-build`
