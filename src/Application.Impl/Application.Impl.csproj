@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <ProjectReference Include="..\Application\Application.csproj" />
+    <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.3.0.23" />
+    <PackageReference Include="AWSSDK.Core" Version="3.3.18.4" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+</Project>
